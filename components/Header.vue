@@ -15,7 +15,6 @@
 .header
   display: flex
   justify-content: space-between
-  background-color: #FAF9F7
 
 .title
   font-family: Source Sans Pro
