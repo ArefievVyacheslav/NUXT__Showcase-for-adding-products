@@ -1,4 +1,7 @@
 <template>
+  <main class="main-content">
+    <Catalog />
+  </main>
 </template>
 
 <script>
