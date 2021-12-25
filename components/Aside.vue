@@ -53,6 +53,9 @@ $forInput: calc(100% - 16px)
   border-radius: 4px
   background-color: #fff
 
+.aside:hover
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.08), 0 6px 10px rgba(0, 0, 0, 0.04)
+
 .title-input
   font-family: Source Sans Pro
   font-style: normal
@@ -107,6 +110,11 @@ $forInput: calc(100% - 16px)
     font-size: 12px
     line-height: 15px
     color: #B4B4B4
+
+
+.input:hover,
+.area:hover
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.04), 0 6px 10px rgba(0, 0, 0, 0.02)
 
 .input
   height: 36px

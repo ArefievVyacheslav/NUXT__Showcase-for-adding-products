@@ -28,6 +28,9 @@ export default {
   box-shadow: 0 20px 30px rgba(0, 0, 0, 0.04), 0 6px 10px rgba(0, 0, 0, 0.02)
   border-radius: 4px
 
+.product-wrapper:hover
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.08), 0 6px 10px rgba(0, 0, 0, 0.04)
+
 .product-wrapper:hover .delete-btn
   display: initial
 
