@@ -80,4 +80,8 @@ export default {
   right: -8px
   display: none
 
+
+@media (max-width: 1440px)
+  .delete-btn
+    display: initial
 </style>

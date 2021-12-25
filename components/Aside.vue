@@ -142,5 +142,7 @@ $forInput: calc(100% - 16px)
 
 @media (max-width: 1150px)
   .aside
-    display: none
+    margin-bottom: 16px
+    margin-right: 0
+
 </style>
