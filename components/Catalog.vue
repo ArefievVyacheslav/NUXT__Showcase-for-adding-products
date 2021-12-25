@@ -1,6 +1,6 @@
 <template>
     <div class="catalog-wrapper">
-      <Card v-for="product in productList" :key="product.id" :product="product" />
+      <Card v-for="product in productList" :key="product.id" :product="product" :productIndex="productList.indexOf(product)" />
     </div>
 </template>
 
@@ -9,13 +9,16 @@ export default {
   name: "Catalog",
   data: () => {
     return {
-      productList: null
+    }
+  },
+  computed: {
+    productList() {
+      return this.$store.getters.products
     }
   },
   methods: {
     async getProducts() {
       await this.$store.dispatch('fetchProducts')
-      this.productList = this.$store.getters.products
     }
   },
   created() {
@@ -24,6 +27,13 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="sass">
+.catalog-wrapper
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 16px
 
+@media (max-width: 1440px)
+  .catalog-wrapper
+    grid-template-columns: repeat(2, 1fr)
 </style>
