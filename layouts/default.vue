@@ -24,4 +24,9 @@
 .wrapper
   display: flex
 
+@media (max-width: 1440px)
+  .container
+    width: 1080px
+    margin: 0 auto
+
 </style>

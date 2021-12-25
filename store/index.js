@@ -13,6 +13,9 @@ export const mutations = {
   },
   addProduct(state, product) {
     state.products.push(product)
+  },
+  removeProduct(state, index) {
+    state.products.splice(index, 1)
   }
 }
 
