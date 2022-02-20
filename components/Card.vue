@@ -1,6 +1,8 @@
 <template>
   <div class="product-wrapper">
-    <img :src="product.img" alt="product image" class="product-image">
+    <div class="product-image">
+      <img :src="product.img" alt="product image">
+    </div>
     <h3 class="product-name">{{ product.name }}</h3>
     <span class="product-description">{{ product.description }}</span>
     <span class="product-price">{{ product.price }} руб.</span>
@@ -40,8 +42,9 @@ export default {
 .product-image
   width: 332px
   height: 200px
-  object-fit: cover
   border-radius: 4px 4px 0 0
+  & img
+    object-fit: cover
 
 .product-name,
 .product-description,
@@ -63,6 +66,7 @@ export default {
   line-height: 25px
 
 .product-description
+  height: 80px
   font-weight: normal
   font-size: 16px
   line-height: 20px

@@ -17,12 +17,12 @@
 <style scoped lang="sass">
 .container
   max-width: 1376px
-  height: 100%
   margin: 0 auto
   background-color: #FAF9F7
 
 .wrapper
-  display: flex
+  position: relative
+  padding-bottom: 16px
 
 @media (max-width: 1440px)
   .container
@@ -32,8 +32,6 @@
 @media (max-width: 1150px)
   .container
     max-width: 680px
-  .wrapper
-    flex-direction: column
 
 @media (max-width: 711px)
   .container
