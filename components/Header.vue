@@ -52,6 +52,14 @@
     margin-right: 53px
 
 @media (max-width: 1150px)
+  .header
+    max-width: 680px
+  .sort
+    margin-right: 0
+
+@media (max-width: 711px)
   .title
-    display: none
+    font-size: 22px
+  .header
+    max-width: 332px
 </style>

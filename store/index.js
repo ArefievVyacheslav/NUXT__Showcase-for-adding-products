@@ -2,7 +2,7 @@ export const actions = {
   async fetchProducts({commit}) {
     const response = await fetch('https://raw.githubusercontent.com/ArefievVyacheslav/ida/main/products.json')
     const products = await response.json()
-    this.commit('pushProducts', products)
+    this.commit('pushProducts', products.reverse())
     return products
   }
 }
@@ -12,7 +12,7 @@ export const mutations = {
     state.products.push(...products)
   },
   addProduct(state, product) {
-    state.products.push(product)
+    state.products.unshift(product)
   },
   removeProduct(state, index) {
     state.products.splice(index, 1)
